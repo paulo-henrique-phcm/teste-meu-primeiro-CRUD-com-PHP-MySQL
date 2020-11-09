@@ -1,0 +1,9 @@
+CREATE TABLE chamados(
+    id_cha int(4) primary key AUTO_INCREMENT not null, 
+    fk_cat int(4) not null, 
+    descricao varchar(250) not null, 
+    nome_solicitante varchar(50) not null, 
+    estado ENUM('Pendente','Em execução', 'Concluído') not null,
+    FOREIGN key (fk_cat) REFERENCES categorias(id_cat)
+);
+insert into chamados(fk_cat, descricao, nome_solicitante, estado) values(1,'fazenda', 'paulo', 'Pendente')
