@@ -23,22 +23,16 @@
             </form>
         
             <h1>Chamadas</h1>
-            <form method='GET' action='./app/show-data.php'>
+            <form method='GET' action='./app/adiciona-cham.php'>
             <h3>adicionar chamado</h3>
-                <select>
-                    <?php
-                        while($tabela = mysqli_fetch_array($dados_categ_option)) {
-                            $op = $tabela['titulo'];
-                            echo "
-                            <select>
-                                <option> $op </option>
-                            </select>";
-                        }
-                ?>
+                <select name='vinculo'>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
                 </select>
                 <input type='text' name='descricao_cham' placeholder='Descrição'/>
                 <input type='text' name='nome_solicitante_cham' placeholder='Nome do Solicitante'/>
-                <select>
+                <select name='estado'>
                     <option>Pendente</option>
                     <option>Em Execução</option>
                     <option>Concluído</option>
