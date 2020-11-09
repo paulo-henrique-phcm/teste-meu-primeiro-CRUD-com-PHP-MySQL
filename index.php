@@ -3,6 +3,7 @@
     $query = "SELECT * from categorias";
     $dados_categ_option = mysqli_query($conexao, $query);
 ?>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;1,300;1,700&display=swap" rel="stylesheet">
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -10,37 +11,37 @@
     </head>
     <body>
         <div class='div1'>
-            <h1>Categorias</h1>
+            <h1 class='titulo text'>Categorias</h1>
             <form method='GET' action='./app/adiciona-categ.php'>
-                <h3>adicionar categoria</h3>
-                <input type='text' name='titulo_categ' placeholder='Titulo'/>
-                <input type='text' name='descricao_categ' placeholder='Descricao'/>
-                <input type='submit' name='enviar_categ' value='adicionar'/></br>
+                <h3 class="text">adicionar categoria</h3>
+                <input class="text input-s place-s titulo" type='text' name='titulo_categ' placeholder='Titulo'/>
+                <input class="text input-s place-s descCat" type='text' name='descricao_categ' placeholder='Descricao'/>
+                <input class="text btn-success" type='submit' name='enviar_categ' value='adicionar'/></br>
 
             </form>
             <form method="GET" action="./app/show-data-categ.php">
-                <button><h3>Mostrar Tabela de Categorias</h3></button>
+                <button class="btn-success text">Mostrar Categorias</button>
             </form>
         
-            <h1>Chamadas</h1>
+            <h1 class="titulo text">Chamadas</h1>
             <form method='GET' action='./app/adiciona-cham.php'>
-            <h3>adicionar chamado</h3>
-                <select name='vinculo'>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
+                <h3 class="text">adicionar chamado</h3>
+                <select class="input-s select" name='vinculo'>
+                    <option class="text">1</option>
+                    <option class="text">2</option>
+                    <option class="text">3</option>
                 </select>
-                <input type='text' name='descricao_cham' placeholder='Descrição'/>
-                <input type='text' name='nome_solicitante_cham' placeholder='Nome do Solicitante'/>
-                <select name='estado'>
-                    <option>Pendente</option>
-                    <option>Em Execução</option>
-                    <option>Concluído</option>
+                <input class="text input-s desc" type='text' name='descricao_cham' placeholder='Descrição'/>
+                <input class="text input-s desc" type='text' name='nome_solicitante_cham' placeholder='Nome do Solicitante'/>
+                <select class="input-s select" name='estado'>
+                    <option class="text">Pendente</option>
+                    <option class="text">Em Execução</option>
+                    <option class="text">Concluído</option>
                 </select>
-                <input type='submit' name='enviar_cham' value='adicionar'/>
+                <input class="btn-success text" type='submit' name='enviar_cham' value='adicionar'/>
             </form>
             <form method="GET" action="./app/show-data-cham.php">
-                <button><h3>Mostrar Tabela de Chamados</h3></button>
+                <button class="btn-success text">Mostrar Chamados</button>
             </form>
         </div>
     </body>

@@ -1,12 +1,79 @@
-
-
 .div1{
     margin: 0 auto;
     width: 60%;
     background-color: whitesmoke;
     padding: 50px;
-  }
+}
+
 .div2{
     background-color: white;
     padding: 10px;
+}
+
+.titulo{
+    font-size: 32px;
+    text-align: center;
+}
+
+.text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.input-s{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5px;
+    height: 30px;
+}
+
+.btn-text{
+    font-size: 18px;
+}
+.btn-success{
+    color: white;
+    border: none;
+    background-color: #1a73e8;
+    height: 30px;
+    width: 20%;
+    border-radius: 3px;
+}
+
+.place-s{
+    width: 37%;
+}
+
+.input-s.select{
+    width: 20%;
+}
+
+.input-s.desc{
+    width: 75%;
+}
+
+.input-s.nome{
+    width: 54%;
+}
+
+
+
+
+.input-s{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    height: 35px;
+    outline: 0;
+}
+
+.input-s:focus, .btn-success:hover{
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: #1a73e8;
+    box-shadow: 1px 1px 10px rgba(26, 115, 232, .3) ;
+}
+
+.btn-success:hover{
+    background-color:  rgba(26, 115, 232, .85);
 }

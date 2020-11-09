@@ -3,6 +3,7 @@
     $query = "SELECT id_cat, titulo, descricao from categorias";
     $dados = mysqli_query($conexao, $query);
 ?>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;1,300;1,700&display=swap" rel="stylesheet">
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../style.css">
@@ -10,12 +11,12 @@
     </head>
     <body>
         <div class='div1'>
-            <h1>Categorias existentes</h1>
+            <h1 class="titulo text">Categorias existentes</h1>
             <table>
                 <tr>
-                    <td>ID</td>
-                    <td>Título</td>
-                    <td>Descrição</td>
+                    <td class="text">ID</td>
+                    <td class="text">Título</td>
+                    <td class="text">Descrição</td>
                 </tr>
                 <?php
                 while($tabela = mysqli_fetch_array($dados)) {
@@ -27,16 +28,16 @@
                 
                 echo "
                 <tr>
-                    <td> <div class='div2'>$id</div> </td>
-                    <td> <div class='div2'>$titulo</div> </td>
-                    <td> <div class='div2'>$descricao </div></td>
+                    <td> <div class='div2 text'>$id</div> </td>
+                    <td> <div class='div2 text'>$titulo</div> </td>
+                    <td> <div class='div2 text'>$descricao </div></td>
                 </tr>";
                 
                 }
                 ?>
             </table>
             <form method="GET" action="../index.php">
-                <button><h3>Voltar</h3></button>
+                <button class="btn-success text">Voltar</button>
             </form>
         </div>
     </body>
