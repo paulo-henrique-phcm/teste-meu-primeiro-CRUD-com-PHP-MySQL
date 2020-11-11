@@ -8,7 +8,10 @@
     $nome = $_GET['nome_solicitante_cham'];
     $estado = $_GET['estado'];
 
-    $query = "INSERT INTO chamados(fk_cat,descricao,nome_solicitante, estado) values('{$vinculo}', '{$descricao}', '{$nome}', '{$estado}')";
+    $hoje = date('d/m/Y');
+    echo $hoje;
+
+    $query = "INSERT INTO chamados(fk_cat,descricao,nome_solicitante, estado, data_cha) values('{$vinculo}', '{$descricao}', '{$nome}', '{$estado}', '{$hoje}')";
     $result_adiciona_cat = mysqli_query($conexao, $query);
     //echo $result_adiciona_cat;
 

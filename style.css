@@ -20,12 +20,6 @@
     font-weight: 600;
 }
 
-.input-s{
-    font-size: 16px;
-    font-weight: 400;
-    margin: 5px;
-    height: 30px;
-}
 
 .btn-text{
     font-size: 18px;
@@ -55,9 +49,6 @@
     width: 54%;
 }
 
-
-
-
 .input-s{
     font-size: 16px;
     font-weight: 400;
@@ -76,4 +67,20 @@
 
 .btn-success:hover{
     background-color:  rgba(26, 115, 232, .85);
+}
+
+.btn-show.edit{
+    color: white;
+    border: none;
+    background-color: #27d13e;
+    height: 30px;
+    border-radius: 3px;
+}
+
+.btn-show.apaga{
+    color: white;
+    border: none;
+    background-color: #e72121;
+    height: 30px;
+    border-radius: 3px;
 }

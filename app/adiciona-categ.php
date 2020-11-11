@@ -5,9 +5,12 @@
     $titulo = $_GET['titulo_categ'];
     $descricao = $_GET['descricao_categ'];
 
-    $query = "INSERT INTO categorias(titulo, descricao) values('{$titulo}', '{$descricao}')";
+    $hoje = date('d/m/Y');
+    echo $hoje;
+
+    $query = "INSERT INTO categorias(titulo, descricao, data_cat) values('{$titulo}', '{$descricao}', '{$hoje}')";
     $result_adiciona_cat = mysqli_query($conexao, $query);
-    //echo $result_adiciona_cat;
+    echo $result_adiciona_cat;
 
     $bd_alterado = mysqli_affected_rows($result_adiciona_cat); //verifica se ocorreu corretamente
 ?>

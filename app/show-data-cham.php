@@ -27,6 +27,7 @@
                 $descricao  = $tabela['descricao'];
                 $nome = $tabela['nome_solicitante'];
                 $estado = $tabela['estado'];
+                $data = $tabela['data_cha'];
                 
                 
                 // Imprimindo valores dentro de uma tabela
@@ -38,6 +39,11 @@
                     <td> <div class='div2 text'>$descricao </div></td>
                     <td> <div class='div2 text'>$nome</div> </td>
                     <td> <div class='div2 text'>$estado</div> </td>
+                    <td class='div2 text'>$data</td>
+                    <td>
+                        <button class='btn-show text edit'>Editar</button>
+                        <button class='btn-show text apaga'>Apagar</button>
+                    </td>
                 </tr>";
                 
                 }
